@@ -59,5 +59,5 @@
         default:
             console.log("i am not a fruit, i am programmer");
             break;
-    }
+    } 
 }

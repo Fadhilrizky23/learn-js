@@ -48,7 +48,11 @@
             console.log("Program selesai")
         }catch(err){
             console.log(`Terjadi error, ini di eksekusi. Errornyaa : ${err}`);
-        }
+        } 
 
+    } 
+
+    {
+        // Finally akan selalu di eksekusi 
     }
 }
