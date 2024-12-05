@@ -32,6 +32,9 @@
 // // kopi.makeCoffe();  
 
 
+// Kalo kita pake this.name dia tidak akan langsung akses ke property nya tapi ke getter name
+// this._name langsung mengakses atribut internal _name tanpa melalui getter, karena _name dianggap sebagai properti biasa. 
+
 class Person {
     constructor(name,country,age){
         this._name = name; // kalo gak pake _ dia looping
