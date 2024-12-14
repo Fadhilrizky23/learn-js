@@ -51,4 +51,19 @@ const cable2 = {
 }
 
 
-console.log(validasiCable(cable1))
+console.log(validatorCable(cable1))  
+
+
+// Contoh Sederhana 
+
+function buatPenjumlahan(x) {
+    return function (y) {
+      return x + y;
+    };
+  }
+  
+  const tambah1 = buatPenjumlahan(1);
+  
+  console.log(tambah1(2)); // 3
+
+
