@@ -1,38 +1,13 @@
-// Async 
-// Tidak harus menunggu 1 tugas selesai untuk ngerjain tugas lain  
-// Proses yang tidak melakukan blocking proses 
+// Misal kita ada di hadapin sama beberapa tugas 
+// 1. Cuci baju 
+// 2. Nyapu 
+// 3. Cuci piring  
 
-{
-    // SetTimeOut 
-    const estTime = 10_000;
+// Kita gka mungkin kan nunggu cuci baju kelar baru nyapu, nah ini kita sambil nyucinya jalan kita nyapu 
 
-    setTimeout(()=>{
-        console.log("Hello World");
-    },estTime);
-} 
+const estTime = 10_000; 
 
+setTimeout(()=>{
+    console.log("Test Async");
+},estTime);
 
-
-{
-    console.log("star");
-
-    setTimeout(()=>console.log("Timeout 0ms"),0); 
-
-    console.log("Stop"); 
-
-    // Harusnyaa 
-    // Star
-    // Timeout 0ms 
-    // Stop 
-
-    // AKTUAL NYAA 
-    // Star 
-    // Stop 
-    // Timeout 0ms  
-
-    // Kenapa begitu ? 
-    // JavaScript adalah bahasa single-thread dengan event loop:
-    // JavaScript mengeksekusi kode secara berurutan (single-threaded), tetapi memiliki mekanisme event loop yang memungkinkannya menangani operasi asynchronous. Ini berarti meskipun sebuah fungsi memiliki waktu tunggu 0ms, ia masih akan dipindahkan ke task queue dan baru dieksekusi setelah call stack kosong. 
-
-    // DAN YANG DI KERJAIN DULUAN DI CALL STACK ADALAH PROSES SINKRONUS 
-}
